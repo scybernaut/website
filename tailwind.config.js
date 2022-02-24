@@ -1,21 +1,22 @@
+const colors = require("tailwindcss/colors");
+
 module.exports = {
   content: ["./src/**/*.{html,js}"],
   theme: {
     extend: {
       fontFamily: {
-        sans: ["Inter"],
+        sans: ["Inter", "sans-serif"],
       },
       colors: {
-        white: "#f3f4f6", // gray-100
-        dark: "#111827", // gray-900
+        white: colors.gray["100"],
+        dark: colors.gray["900"],
       },
       fontSize: {
         "8xl": "6rem",
       },
       maxWidth: {
-        "1/3": "33.333333%",
-        "2/3": "66.666667%",
         "2/5": "40%",
+        "2/3": "66.666667%",
       },
       maxHeight: {
         "1/4": "25%",
@@ -25,9 +26,8 @@ module.exports = {
         "1/3": "33.333333%",
       },
       minHeight: {
-        "1/2": "50%",
-        "1/3": "33.333333%",
         "1/4": "25%",
+        "1/2": "50%",
       },
       zIndex: {
         "-10": "-10",
