@@ -20,8 +20,6 @@ const colors = [
   "#f43f5e",
 ];
 
-console.log("hello");
-
 let lastColor = undefined;
 const newColor = () => {
   const getColor = () => colors[Math.floor(Math.random() * colors.length)];
