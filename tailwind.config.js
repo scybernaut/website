@@ -9,6 +9,7 @@ module.exports = {
       },
       colors: {
         white: colors.gray["100"],
+        gray: colors.gray,
         dark: colors.gray["900"],
       },
       fontSize: {
